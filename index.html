@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <p class="heading">Calculator</p>
+    <div class="calculator-display">
+        <p class="js-cal calculation">0</p>
+    </div>
+    <div class="js-align">
+        <p>
+            <button onclick="updatecalculation('1')" class="number gray">1</button>
+            <button onclick="updatecalculation('2')" class="number gray">2</button>
+            <button onclick="updatecalculation('3')" class="number gray">3</button>
+            <button onclick="updatecalculation('+')" class="number orange" >+</button>
+        </p>
+        <p>
+            <button onclick="updatecalculation('4')" class="number gray">4</button>
+            <button onclick="updatecalculation('5')" class="number gray">5</button>
+            <button onclick="updatecalculation('6')" class="number gray">6</button>
+            <button onclick="updatecalculation('-')" class="number orange">-</button>
+        </p>
+        <p>
+            <button onclick="updatecalculation('7')" class="number gray">7</button>
+            <button onclick="updatecalculation('8')" class="number gray">8</button>
+            <button onclick="updatecalculation('9')" class="number gray">9</button>
+            <button onclick="updatecalculation('*')" class="number orange">*</button>
+        </p>
+    <p>
+            <button onclick="updatecalculation('0')" class="number gray">0</button>
+            <button onclick="updatecalculation('.')" class="number gray">.</button>
+            <button onclick="console.log(calculation=eval(calculation)),calculate(),localStorage.setItem('calculation',calculation)" class="number gray">=</button>
+            <button onclick="updatecalculation('/')" class="number orange">/</button>
+        </p>
+        <p>
+            <button onclick="calculation='',calculate(),console.log('cleared..'),localStorage.setItem('calculation',calculation)" class="number gray clear">clear</button>
+        </p>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
